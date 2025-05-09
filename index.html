@@ -10,24 +10,56 @@
     <header>
         <nav>
             <ul id="nav-list">
-                <li class="nav-item"><img src="img/logo.png" alt="DevSolutions" id="logo-dev"></li>
-                <li class="nav-item"><button href="" class="nav-link">Home</a></li>
-                <li class="nav-item"><button href="" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><button href="" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><button href="" class="nav-link">Contato</a></li>
+                <li class="nav-item" id="home-li"><a href="#home" class="nav-link"><img src="img/logo.png" alt="DevSolutions: Home" id="logo-dev"></a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section id="home" class="secao">
+            <h1 class="titulo-secao2">Bem vindo a DevSolutions!</h1><br>
+            <h2 class="subtitulo-secao2">Líder em desenvolvimento de Software</h2><br>
+        </section>
         <section id="sobre" class="secao">
             <h1 class="titulo-secao">Sobre a DevSolutions</h1><br>
             <p>A DevSolutions nasceu da paixão por tecnologia e inovação. Somos uma startup comprometida em oferecer soluções digitais de alta performance, conectando empresas e pessoas ao futuro da transformação digital. Nossa missão é simplificar processos e impulsionar negócios por meio da tecnologia, oferecendo serviços personalizados que atendem às necessidades específicas de cada cliente. Com valores fundamentados na excelência, transparência e compromisso, buscamos sempre superar expectativas e garantir resultados que impactam positivamente o mercado.</p>
         </section>
         <section id="servicos" class="secao">
             <h1 class="titulo-secao">Serviços</h1><br>
-            <h2 class="titulo-secao">Desenvolvimento de Software</h2><br>
-            <p>Criamos softwares sob medida para atender aos desafios do seu negócio. Seja um sistema corporativo, um aplicativo mobile ou uma solução web inovadora, a equipe da DevSolutions está pronta para transformar suas ideias em realidade com tecnologia de ponta e metodologias ágeis.</p>
+            <h2 class="subtitulo-secao">Desenvolvimento de Software</h2><br>
+            <p>Criamos softwares sob medida para atender aos desafios do seu negócio. Seja um sistema corporativo, um aplicativo mobile ou uma solução web inovadora, a equipe da DevSolutions está pronta para transformar suas ideias em realidade com tecnologia de ponta e metodologias ágeis.</p><br>
+            <h2 class="subtitulo-secao">Consultoria em Tecnologia</h2><br>
+            <p>sob medida para atender aos desafios do seu negócio. Seja um sistema corporativo, um aplicativo mobile ou uma solução web inovadora, a equipe da DevSolutions está pronta para transformar suas ideias em realidade com tecnologia de ponta e metodologias ágeis.</p>
+        </section>
+        <section id="contato" class="secao">
+            <h1 class="titulo-secao">Contato</h1><br>
+            <form onsubmit="enviarMensagem(event)">
+                <div>
+                    <label for="nome">Nome</label>
+                    <div class="form-div">
+                        <input type="text" name="nome" id="nome" class="form-input" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <div class="form-div">
+                        <input type="email" name="email" id="email" class="form-input" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="msg">Mensagem</label>
+                    <div class="form-div">
+                        <textarea name="msg" id="msg" cols="30" class="form-input" minlength="100" required></textarea>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </form>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
