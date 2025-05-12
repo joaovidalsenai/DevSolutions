@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <title>Saude Access</title>
+</head>
+<body>
+    <header>
+        <h1 onclick="mudarTema()"></h1>
+    </header>
+    <main>
+        <form action="#" class="form-busca-hospital">
+            <input type="search" name="pesquisar-hospitais" class="inp-busca-hospital" placeholder="Pesquisar">
+            <button type="submit" class="btn-busca-hospital">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+            </button>
+        </form>
+        <div class="div-butoes">
+            <button type="button" class="botao-hospital">
+                <span class="botao-hospital-nota">
+                    <img src="assets/Perfil2.png" alt="">
+                </span>
+                <span class="botao-hospital-nome">Perfil</span>
+            </button>
+            <button type="button" class="botao-hospital">
+                <span class="botao-hospital-nota">
+                    <img src="assets/Cima.png" alt="">
+                </span>
+                <span class="botao-hospital-nome">Hospitais mais procurados</span>
+            </button>
+            <button type="button" class="botao-hospital">
+                <span class="botao-hospital-nota">
+                    <img src="assets/Fone.png" alt="">
+                </span>
+                <span class="botao-hospital-nome">Suporte técnico</span>
+            </button>
+            <button type="button" class="botao-hospital">
+                <span class="botao-hospital-nota">
+                    <img src="assets/Block.png" alt="">
+                </span>
+                <span class="botao-hospital-nome">Hospitais com menor lotação</span>
+            </button>
+            <button type="button" class="botao-hospital">
+                <span class="botao-hospital-nota">
+                    <img src="assets/Loc.png" alt="">
+                </span>
+                <span class="botao-hospital-nome">Hospitais mais próximos</span>
+            </button>
+            <button type="button" class="botao-hospital">
+                <span class="botao-hospital-nota">
+                    <img src="assets/I.png" alt="">
+                </span>
+                <span class="botao-hospital-nome">Sobre nós</span>
+            </button>  
+        </div>
+    </main>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <button type="button" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fffafa" viewBox="0 0 256 256"><path d="M112,80a16,16,0,1,1,16,16A16,16,0,0,1,112,80ZM64,80a64,64,0,0,1,128,0c0,59.95-57.58,93.54-60,94.95a8,8,0,0,1-7.94,0C121.58,173.54,64,140,64,80Zm16,0c0,42.2,35.84,70.21,48,78.5,12.15-8.28,48-36.3,48-78.5a48,48,0,0,0-96,0Zm122.77,67.63a8,8,0,0,0-5.54,15C213.74,168.74,224,176.92,224,184c0,13.36-36.52,32-96,32s-96-18.64-96-32c0-7.08,10.26-15.26,26.77-21.36a8,8,0,0,0-5.54-15C29.22,156.49,16,169.41,16,184c0,31.18,57.71,48,112,48s112-16.82,112-48C240,169.41,226.78,156.49,202.77,147.63Z"></path></svg>                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fffafa" viewBox="0 0 256 256"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fffafa" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fffafa" viewBox="0 0 256 256"><path d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm-8-48A95.44,95.44,0,0,0,60.08,60.15C52.81,67.51,46.35,74.59,40,82V64a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H72a8,8,0,0,0,0-16H49c7.15-8.42,14.27-16.35,22.39-24.57a80,80,0,1,1,1.66,114.75,8,8,0,1,0-11,11.64A96,96,0,1,0,128,32Z"></path></svg>                </button>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

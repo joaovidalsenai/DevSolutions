@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <button id="voltar" onclick="altCadastro(1)">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.7076 20.2925C11.8005 20.3854 11.8742 20.4957 11.9244 20.6171C11.9747 20.7385 12.0006 20.8686 12.0006 21C12.0006 21.1314 11.9747 21.2615 11.9244 21.3829C11.8742 21.5043 11.8005 21.6146 11.7076 21.7075C11.6146 21.8004 11.5043 21.8741 11.383 21.9244C11.2616 21.9747 11.1314 22.0006 11.0001 22.0006C10.8687 22.0006 10.7386 21.9747 10.6172 21.9244C10.4958 21.8741 10.3855 21.8004 10.2926 21.7075L0.292554 11.7075C0.199577 11.6146 0.125819 11.5043 0.0754948 11.3829C0.0251705 11.2615 -0.000732422 11.1314 -0.000732422 11C-0.000732422 10.8686 0.0251705 10.7385 0.0754948 10.6171C0.125819 10.4957 0.199577 10.3854 0.292554 10.2925L10.2926 0.292507C10.4802 0.104866 10.7347 -0.000549322 11.0001 -0.000549316C11.2654 -0.000549311 11.5199 0.104866 11.7076 0.292507C11.8952 0.480147 12.0006 0.734643 12.0006 1.00001C12.0006 1.26537 11.8952 1.51987 11.7076 1.70751L2.4138 11L11.7076 20.2925Z" class="voltar"/>
+            </svg>                
+        </button>
+        <h1 onclick="mudarTema()">Cadastro</h1>
+    </header>
+    <main>
+        <form action="Inicio.html">
+            <section id="form-info">
+                <label for="cadastro-nome" class="label-cadastro">Nome</label>
+                <input type="text" name="cadastro-nome" id="cadastro-nome" placeholder="Insira seu nome completo" class="input-cadastro" required>
+                <label for="cadastro-email" class="label-cadastro">E-mail</label>
+                <input type="email" name="cadastro-email" id="cadastro-email" placeholder="Insira seu endereço de E-mail" class="input-cadastro" required>
+                <label for="cadastro-cpf" class="label-cadastro">CPF</label>
+                <input type="text" name="cadastro-cpf" id="cadastro-cpf" placeholder="Insira seu CPF, sem pontos ou traços" class="input-cadastro" required>
+                <label for="cadastro-nascimento" class="label-cadastro">Data de Nascimento</label>
+                <input type="date" name="cadastro-nascimento" id="cadastro-nascimento" placeholder="Insira sua data de nascimento" class="input-cadastro" required>
+                <input type="button" value="Prosseguir" id="cadastro-prosseguir" onclick="altCadastro(0)">
+            </section>
+            <section id="form-senha" class="" hidden>
+                <label for="cadastro-cep" class="label-cadastro">Crie um CEP</label>
+                <input type="text" name="cadastro-cep" id="cadastro-cep" placeholder="Insira seu CEP sem pontos ou traços" class="input-cadastro" required>
+                <label for="cadastro-senha" class="label-cadastro">Crie um senha</label>
+                <input type="password" name="cadastro-senha" id="cadastro-senha" placeholder="Insira uma senha forte" class="input-cadastro" required>
+                <label for="cadastro-confirm-senha" class="label-cadastro">Confirme sua senha</label>
+                <input type="password" name="cadastro-confirm-senha" id="cadastro-confirm-senha" placeholder="Insira sua data de nascimento" class="input-cadastro" required>
+                <input type="submit" value="Finalizar Cadastro" id="cadastro-finalizar">
+            </section>
+        </form>
+    </main>
+    <script src="js/global.js"></script>
+    <script src="js/scriptCadastro.js"></script>
+</body>
+</html>

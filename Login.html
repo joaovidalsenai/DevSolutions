@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>       
+        <h1 onclick="mudarTema()">Login</h1>
+    </header>
+    <main>
+        <form action="">
+            <label for="login-credencial" class="label-login">CPF ou E-mail</label>
+            <input type="text" name="login-credencial" id="login-credencial" placeholder="Insira seu CPF ou E-mail cadastrado" class="input-cadastro" required>
+            <label for="login-senha" class="label-login">Senha</label>
+            <input type="password" name="login-senha" id="login-senha" placeholder="Insira sua chave de acesso" class="input-cadastro" required>
+            <input type="submit" value="Entrar" id="login-finalizar">
+        </form>
+    </main>
+</body>
+<script src="js/scriptLogin.js"></script>
+</html>
